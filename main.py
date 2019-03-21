@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import random,os,sys,math
 import pygame as pg
 
@@ -586,6 +587,8 @@ def loop():
 
 				elif event.key == pg.K_UP:
 					game.player.move_bool = 1
+				elif event.key == pg.KEYDOWN:
+					game.player.move_bool = -1
 
 			
 			elif event.type == pg.JOYBUTTONUP:
